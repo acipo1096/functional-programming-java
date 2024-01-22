@@ -1,0 +1,4 @@
+Declarative Programming - tell it what you want
+Imperative Programming - define every single implementation detail of your code
+
+A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that contains information about the project and configuration details used by Maven to build the project.
