@@ -1,6 +1,7 @@
 package imperative;
 
 import java.util.List;
+import java.util.ArrayList;
 
 import static imperative.Main.Gender.*;
 
@@ -16,6 +17,20 @@ public class Main {
             new Person("Alex", MALE),
             new Person("Alice", FEMALE)
         );
+
+        // Imperative Approach to find the # of females
+        List<Person> females = new ArrayList<>();
+
+        for (Person person : people) {
+            if (FEMALE.equals(person.gender)) {
+                females.add(person);
+            }
+        }
+
+        for (Person female : females) {
+            System.out.println(female);
+        }
+        
     }
 
         static class Person {
@@ -30,7 +45,7 @@ public class Main {
             @Override
             public String toString() {
                 return "Person{" + 
-                        "name='" + name + '\\' + 
+                        "name='" + name + ',' + 
                         "gender=" + gender + 
                         '}';
             }
