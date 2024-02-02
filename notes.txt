@@ -2,3 +2,16 @@ Declarative Programming - tell it what you want
 Imperative Programming - define every single implementation detail of your code
 
 A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that contains information about the project and configuration details used by Maven to build the project.
+
+Pure functional programming has a set of rules to follow
+===========================================================================
+- No state around your functions
+- Functions shouldn't depend on any other state i.e. they should be pure 
+- Impure functions DO depend on state
+===========================================================================
+- Functions should have NO side effects outside them
+===========================================================================
+- A function is considered a Higher Order Function if either
+    * The function takes one or more functions as parameters.
+    * The function returns another function as a result.
+===========================================================================
