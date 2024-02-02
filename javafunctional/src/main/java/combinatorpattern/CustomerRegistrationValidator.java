@@ -41,17 +41,3 @@ public interface CustomerRegistrationValidator
             IS_NOT_AN_ADULT
         }
 }
-
-// If we didn't chain with Combinator Patterns, this is what the functions would look like:
-
-// static CustomerRegistrationValidator isEmailValid() {
-//     return customer -> customer.getEmail().contains("@") ? SUCCESS : EMAIL_NOT_VALID;
-// }
-
-// static CustomerRegistrationValidator isPhoneNumberValid() {
-//     return customer -> customer.getPhoneNumber().startsWith("+1") ? SUCCESS : PHONE_NUMBER_NOT_VALID;
-// }
-
-// static CustomerRegistrationValidator isAnAdult() {
-//             return customer -> Period.between(customer.getDob(), LocalDate.now()).getYears() > 18 ? SUCCESS : IS_NOT_AN_ADULT;
-//         }
