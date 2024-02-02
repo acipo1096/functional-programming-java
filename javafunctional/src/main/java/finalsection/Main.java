@@ -8,6 +8,10 @@ public class Main {
         hello("John",null, value -> {
             System.out.println("Last name not provided for " + value);
         });
+
+        hello2("John", null, () -> {
+            System.out.println("Last name not provided");
+        });
         
     }
     
@@ -21,13 +25,13 @@ public class Main {
     }
 
     static void hello2(String firstName, String lastName, Runnable callback) {
-        System.out.println(firstName);
-        if (lastName != null) {
-            System.out.println(lastName);
-        } else {
-            callback.run();
-        }
+    System.out.println(firstName);
+    if (lastName != null) {
+        System.out.println(lastName);
+    } else {
+        callback.run();
     }
+}
 
     // JavaScript
     /* 
