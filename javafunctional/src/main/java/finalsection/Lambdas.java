@@ -14,12 +14,12 @@ public class Lambdas {
 
         // Return block
         Function<String, String> upperCaseName = name -> {
-            if (name.isEmpty()) throw new IllegalArgumentException("");
+            if (name.isBlank()) throw new IllegalArgumentException("");
             return name.toUpperCase();
         };
 
         BiFunction<String, Integer, String> upperCaseName2 = (name,age) -> {
-            if (name.isEmpty()) throw new IllegalArgumentException("");
+            if (name.isBlank()) throw new IllegalArgumentException("");
             return name.toUpperCase();
         };
         
